@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример сайта</title>
+    <style>
+        #message {
+            display: none;
+            font-size: 24px;
+            margin-top: 20px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div style="text-align: center; margin-top: 50px;">
+    <button id="myButton">Нажми на меня</button>
+    <div id="message">Андрей пидор</div>
+</div>
+
+<script>
+        document.getElementById("myButton").onclick = function() {
+            this.style.display = 'none'; // Скрыть кнопку document.getElementById("message").style.display = 'block'; // Показать сообщение
+        };
+    </script>
+</body>
+</html>
